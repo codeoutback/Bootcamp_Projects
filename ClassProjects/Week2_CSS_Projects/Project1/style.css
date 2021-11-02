@@ -1,0 +1,162 @@
+/*#Task1 - This is a black box with white wording sourounded by a red border*/
+h1{
+    border: red solid 5px;
+}
+.cat{
+    background-color: black;
+}
+#dog{
+    color: white;
+    width: 25%;
+    text-align: center;
+    margin: auto;
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px; 
+}
+
+/*Task2 - I see a black box with a red border and there is no wording
+     because the white color is on the dog id*/
+
+#mouse{
+    color: yellow;
+    border: blue dashed 5px;
+    width: 200px;
+    padding-right: 100px;
+}
+
+/*Task3 - I see a black box with a red border and there is no wording
+     because the white color is on the dog id and the yellow color is on the id mouse*/
+
+#bird{
+    color: lightgreen;
+    border: green ridge 5px;
+    width: 50vw;
+    text-align: right;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+/*Task4 - The px does not resize but the vw does when you make the browser smaller*/
+
+#horse{
+    color: orange;
+    margin: auto;
+    padding: 100px 0px 0px 100px;
+}
+
+/*The h1 is already centered*/
+
+img{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    /*display: block;*/
+}
+
+div{
+    border: red solid 5px;
+    width: 25%;
+    height: 300px;
+    margin: auto;
+}
+
+/*You can see the image but it did not get centered after I put margin because 
+img is an inline element and does not use margin. When I added a border to the div, 
+it did not only put the border around the picture but it is stretched to the width 
+of the screen but same length as the picture. When I added the width, it made the 
+image smaller and the border but it still is wider than the image. When I commented
+out the img width, the picture now goes past the border and is huge again.After changing 
+the width of the img to 100%, it looks a lot better. That space that is happening 
+under the image, is there because img is an inline-level element so the browser will add space.*/
+
+
+p{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+p.changeFont{
+    color: darkblue;
+}
+
+#p3{
+    color: red;
+}
+
+/*The other elements did not change color cause ID takes top priority 
+and only the third item has and id of red*/
+
+p.changeFont { 
+    color: green
+}
+
+/*Nothing changed with the above because the element calling 
+has the lowest specificity and class is already called for all of them. After adding the
+.changeFont, everything changed except for the id ps because ids have the highest
+specificity.*/
+
+
+h2{
+    font: bold;
+    font-size: 36px;
+    width: 30%;
+}
+h2.h1{
+    background-color: green;
+    text-align: left;
+}
+h2.h2{
+    background-color: yellow;
+    text-align: center;
+    margin: auto;  
+}
+h2.h3{
+    background-color: red;
+    text-align: right;
+    float: right;
+}
+
+
+
+#smallPic{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    
+}
+
+
+
+#picOne{
+    background-color: blue;
+    border: red solid 5px;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+#picTwo{
+    background-color: green;
+    border: red solid 5px;
+    display: flex;
+    align-items: center;
+    clear: left;
+    float: center;
+}
+
+#picThree{
+    background-color: orange;
+    border: red solid 5px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+
+
+
